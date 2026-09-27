@@ -2,27 +2,27 @@
 class Porthole < Formula
   desc "Supervise Claude Code on this computer from your Android phone, over Tailscale"
   homepage "https://porthole-one.vercel.app"
-  version "0.29.0"
+  version "0.30.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.29.0/portholed-darwin-arm64"
-      sha256 "d5a3e374cae6df2b0019cca53b1e7a5b9f4485df878712387fd175fb17c233a8"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.30.0/portholed-darwin-arm64"
+      sha256 "5c349e9f22f4f031a48cda05f13c3a46fad354cca86d0dac3652501f9ef39a80"
     end
     on_intel do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.29.0/portholed-darwin-amd64"
-      sha256 "ade7c9872faef7b1ce35b06233a03ef03c401c2a57520985c08fafd21bd691c6"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.30.0/portholed-darwin-amd64"
+      sha256 "df8c5786da09dcea3ba8f8ec842f15aa090c23ed731100200891694507f4b84e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.29.0/portholed-linux-arm64"
-      sha256 "5cfe3c5e183a360d7b04b16ab1a289c88e1fb584b7bda49029e9e14c8770c3df"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.30.0/portholed-linux-arm64"
+      sha256 "84dbcd4c9649fea33b376c1ea5e8aa374be3228620b8a8a41cc7d6a563889557"
     end
     on_intel do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.29.0/portholed-linux-amd64"
-      sha256 "399ca8b5bed1df8b6facd76db2bc6507a262aefa9d0297ec5b90f9686e8275a6"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.30.0/portholed-linux-amd64"
+      sha256 "9968c27e33940dfd7ed1bb1349521ab8fbd896e411f85b38f5423628af2d194f"
     end
   end
 
@@ -42,6 +42,8 @@ class Porthole < Formula
         portholed doctor
         portholed pair
       Start Claude Code with porthole instead of claude, in your project's folder.
+      On a Mac, run portholed setup again after an upgrade: macOS treats each version as
+      a new program and asks again about your folders.
     EOS
   end
 
