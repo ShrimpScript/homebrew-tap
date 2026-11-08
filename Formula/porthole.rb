@@ -2,27 +2,27 @@
 class Porthole < Formula
   desc "Supervise Claude Code on this computer from your Android phone, over Tailscale"
   homepage "https://porthole-one.vercel.app"
-  version "0.40.1"
+  version "0.41.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.40.1/portholed-darwin-arm64"
-      sha256 "3a078983452bad79d6ae3847fd56dc4b2c2d1796813f980b58de5fa0083f6941"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.41.0/portholed-darwin-arm64"
+      sha256 "75d94b9e4fcc622f16dcd968a5e512bc24d408e35160acf285471bbc3399a1de"
     end
     on_intel do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.40.1/portholed-darwin-amd64"
-      sha256 "37aecf933a2bf67752f25c6cf73805f46835adfef8fe7e33c03d6b07b2cfe80f"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.41.0/portholed-darwin-amd64"
+      sha256 "d55d0847bcaf6abbd8916af7a2ea7210bc97663ac9ebabe3ff4470ec840f6dbb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.40.1/portholed-linux-arm64"
-      sha256 "207da2c86e6783964cf5bff4ecb6c53445a49385b2fa4dac19b11f10fa879b75"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.41.0/portholed-linux-arm64"
+      sha256 "f30c7244591f4fb41bef9e438276795c035911489c29c51c33c6442cdac5cc67"
     end
     on_intel do
-      url "https://github.com/ShrimpScript/porthole/releases/download/v0.40.1/portholed-linux-amd64"
-      sha256 "ea8a3371f30389e68df7889970be3804626152a444e9bbd1ce8fd70a0558e187"
+      url "https://github.com/ShrimpScript/porthole/releases/download/v0.41.0/portholed-linux-amd64"
+      sha256 "6140e82ade834fbe51efe807095b9d595506b18ab4b89cd805858fe7eaf010b4"
     end
   end
 
